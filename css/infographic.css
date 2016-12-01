@@ -1,0 +1,727 @@
+html, body
+{
+	margin: 0;
+	padding: 0;
+	min-width: 1200px;
+}
+
+.full-width
+{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.fixed-width
+{
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+.header
+{
+	background: rgb(28,31,46);
+	height: 986px;
+}
+.logo
+{
+	top: 240px;
+	position: absolute;
+	left: -340px;
+}
+
+.sharing
+{
+	position: absolute;
+	top: 50px;
+	/*right: 50px;*/
+	right: -99999px;
+	/*visibility: hidden;*/
+}
+.sharing.visible
+{
+	right: 50px;
+}
+
+.share-button
+{
+	position: relative;
+	overflow: hidden;
+	border-radius: 5px;
+	width: 115px;
+	height: 32px;
+	z-index: 10;
+}
+.share-button.fb-share .share-cover
+{
+	background: rgb(53,98,167);
+}
+.share-button.twitter-share .share-cover
+{
+	background: rgb(0,204,254);
+}
+
+.share-button:hover .share-cover
+{
+	transform: translate3d(0, -38px, 0);
+}
+.share-cover
+{
+	position: absolute;
+	z-index: 8;
+	transition: all 0.3s ease-out;
+}
+.share-bg
+{
+	position: absolute;
+	width: 115px;
+	height: 32px;
+	background: rgb(39,41,61);
+	z-index: 8;
+}
+.fb-share
+{
+	position: absolute;
+	width: 115px;
+	height: 32px;
+	right: 130px;
+	border-radius: 5px;
+}
+.twitter-share
+{
+	position: absolute;
+	width: 115px;
+	height: 32px;
+	right: 0px;
+	border-radius: 5px;
+}
+.fb_iframe_widget {
+  position: absolute !important;
+  top: 6px;
+  left: 11px;
+  z-index: 8;
+}
+#twitter-widget-0
+{
+	position: absolute !important;
+	z-index: 8;
+	top: 6px;
+	left: 18px;
+}
+
+
+@-webkit-keyframes head_light_flicker
+{
+	0% { opacity: 0; }
+	20% { opacity: 1; }
+	50% { opacity: 0; }
+	60% { opacity: 1; }
+	100% { opacity: 1; }
+}
+@-moz-keyframes head_light_flicker
+{
+	0% { opacity: 0; }
+	20% { opacity: 1; }
+	50% { opacity: 0; }
+	60% { opacity: 1; }
+	100% { opacity: 1; }
+}
+@-o-keyframes head_light_flicker
+{
+	0% { opacity: 0; }
+	20% { opacity: 1; }
+	50% { opacity: 0; }
+	60% { opacity: 1; }
+	100% { opacity: 1; }
+}
+@keyframes head_light_flicker
+{
+	0% { opacity: 0; }
+	20% { opacity: 1; }
+	50% { opacity: 0; }
+	60% { opacity: 1; }
+	100% { opacity: 1; }
+}
+.logo-car-headlight
+{
+	-webkit-animation: head_light_flicker 1.0s infinite;
+	-moz-animation: head_light_flicker 1.0s infinite;
+	-o-animation: head_light_flicker 1.0s infinite;
+	animation: head_light_flicker 1.0s infinite;
+}
+.subtitle
+{
+	position: absolute;
+	font-family: 'Museo Sans W01_300';
+	font-size: 1.2em;
+	color: rgb(163,168,194);
+	text-align: right;
+	width: 530px;
+	right: 272px;
+	top: 480px;
+}
+.subtitle b
+{
+	font-family: 'Museo Sans W01_700';
+	color: white;
+}
+.into-cta
+{
+	font-family: 'Museo Sans W01_300';
+	font-size: 1.0em;
+	color: rgb(163,168,194);
+	text-align: center;
+	width: 630px;
+	position: absolute;
+	top: 690px;
+	left: 300px;
+}
+.game-shortcut
+{
+	position: absolute;
+	z-index: 1;
+	top: 50px;
+	right: 50px;
+	background: rgb(50,171,223);
+	color:white;
+	display: block;
+	padding: 20px;
+	border-radius: 5px;
+	font-family: 'Museo Sans W01_700';
+	font-size: 1.6em;
+	letter-spacing: 1.1px;
+	cursor: pointer;
+	transition: all 0.15s ease-out;
+}
+.game-shortcut:hover
+{
+	background: rgb(30,151,203);
+	transform: scale(1.05,1.05);
+}
+
+@-webkit-keyframes scale_bob
+{
+	0%, 100% { transform: scale(1,1);}
+	50%  { transform: scale(1.1,1.1); }
+}
+@-moz-keyframes scale_bob
+{
+	0%, 100% { transform: scale(1,1);}
+	50%  { transform: scale(1.1,1.1); }
+}
+@-o-keyframes scale_bob
+{
+	0%, 100% { transform: scale(1,1);}
+	50%  { transform: scale(1.1,1.1); }
+}
+@keyframes scale_bob
+{
+	0%, 100% { transform: scale(1,1);}
+	50%  { transform: scale(1.1,1.1); }
+}
+
+.scroll-cta
+{
+	position: absolute;
+	text-align: center;
+	font-family: 'Museo Sans W01_700';
+	font-size: 1.2em;
+	color: rgb(50,171,223);
+	top: 830px;
+	left: 540px;
+	-webkit-animation: scale_bob 0.5s infinite;
+	-moz-animation: scale_bob 0.5s infinite;
+	-o-animation: scale_bob 0.5s infinite;
+	animation: scale_bob 0.5s infinite;
+}
+
+.scroll-down-icon
+{
+	position: absolute;
+	display: block;
+	top: 860px;
+	left: 580px;
+}
+
+.infographic
+{
+	padding-top: 150px;
+	position: relative;
+	background: rgb(39,42,63);
+}
+.infographic .fixed-width
+{
+	padding-bottom: 200px;
+}
+
+.windy-road
+{
+	position: absolute;
+	right:0;
+	top: -230px;
+}
+.road-extender
+{
+	position: absolute;
+	left:1199px;
+	z-index: 1;
+	top: -230px;
+}
+.tunnel
+{
+	position: absolute;
+	z-index: 2;
+	top: 35px;
+	right: 0;
+}
+#road-path
+{
+	position: absolute;
+	z-index: 10;
+	right:0;
+	top:-187px;
+}
+#road-path-target
+{
+	transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.scroll-car
+{
+	position: absolute;
+	z-index: 3;
+	top: -230px;
+	right: 0;
+    -ms-transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%; 
+    transform-origin: 50% 50%;
+}
+
+.stripes
+{
+	position: absolute;
+	top: 220px;
+	width: 100%;
+}
+.stripe
+{
+	width: 100%;
+	height: 160px;
+	background: rgb(36,39,59);
+	margin-top: 275px;
+}
+
+.info-rows
+{
+	margin-top: 150px;
+}
+.info-row
+{
+	width:100%;
+	height: 450px;
+	overflow: hidden;
+}
+.info-point
+{
+	position: relative;
+}
+.info-row:first-of-type
+{
+	top:0;
+}
+.info-row.right .info-point
+{
+	right: -740px;
+}
+.info-row.left .info-point
+{
+	left: 120px;
+}
+
+
+.info-text
+{
+	width: 300px;
+	position: relative;
+	top: -40px;
+}
+.info-row.left .info-text
+{
+	text-align: right;
+}
+
+.info-icon
+{
+	display: block;
+	position: relative;
+}
+.safety-first
+{
+	top:28px;
+}
+.speeding-ticket
+{
+	
+}
+.drink-driving
+{
+	left: -10px;
+}
+.driving-test
+{
+	
+}
+.romanian-car-law
+{
+	left:-20px;
+}
+.traffic-lights
+{
+	top:0;
+}
+.german-car-law
+{
+	top:10px;
+	left:-40px;
+}
+.sweedish-roads
+{
+	top:0;
+}
+
+
+.info-point h3
+{
+	font-family: 'Museo Sans W01_700';
+	color: white;
+	font-size: 2.5em;
+	/*letter-spacing: 1.1px;*/
+	letter-spacing: -2px;
+	line-height: 0;
+	margin-bottom: 30px;
+	margin-top:30px;
+}
+.info-point p
+{
+	font-family: 'Museo Sans W01_300';
+	color: white;
+	font-size: 1.2em;
+}
+
+.info-point b
+{
+	font-family: 'Museo Sans W01_700';
+	color:rgb(96,184,229);
+}
+
+.game-entry
+{
+	height: 986px;
+	background: rgb(0,156,223);
+	text-align: center;
+	transition: all 0.5s ease-out;
+}
+.game-entry.playing
+{
+	background: rgb(18,20,36);
+}
+.game-entry h3
+{
+	font-family: 'Museo Sans W01_700';
+	color: white;
+	font-size: 5.0em;
+	/*letter-spacing: 1.1px;*/
+	letter-spacing: -1px;
+	line-height: 0;
+	margin-bottom: 60px;
+	margin-top: 30px;
+}
+.game-entry p
+{
+	font-family: 'Museo Sans W01_300';
+	font-size: 1.2em;
+	color: white;
+	margin-bottom: 50px;
+}
+.blue-road
+{
+	position: absolute;
+	top:0;
+	left:0;
+	visibility: hidden;
+	height: 100%;
+}
+
+.game-form
+{
+	width: 800px;
+	position: absolute;
+	margin-top: 250px;
+	left: 200px;
+	visibility: hidden;	
+}
+#game-player-name
+{
+	background: none;
+	border: 1px solid white;
+	border-radius: 6px;
+	width: 30%;
+	width: 400px;
+	font-family: 'Museo Sans W01_300';
+	height: 60px;
+	font-size: 1.2em;
+	text-align: center;
+}
+#game-player-name:focus
+{
+	border: 1px solid white;
+	background: rgba(255,255,255,0.1);
+}
+#game-player-name::-webkit-input-placeholder 
+{
+	color: white;
+}
+#game-player-name:-moz-placeholder { 
+	color: white;
+}
+#game-player-name::-moz-placeholder {
+	color: white; 
+}
+#game-player-name:-ms-input-placeholder {  
+	color: white;
+}
+input, select, textarea{
+    color: white;
+}
+textarea:focus, input:focus {
+    color: white;
+}
+
+.game-start-button
+{
+	background: rgb(39,42,63);
+	color:white;
+	display: block;
+	cursor: pointer;
+	padding: 10px;
+	max-width: 386px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	border-radius: 5px;
+	font-family: 'Museo Sans W01_700';
+	font-size: 2.5em;
+	letter-spacing: 1.1px;
+	box-shadow: 10px 10px rgba(0,0,0,0.1);
+	transition: all 0.12s ease-out;
+}
+.game-start-button:hover
+{
+	background: rgb(215,146,31);
+}
+
+.game-preloader
+{
+	position: absolute;
+	width: 446px;
+	left: 377px;
+	height: 4px;
+	top: 463px;
+	visibility: hidden;	
+}
+.preload-bar
+{
+	width: 100%;
+	height: 4px;
+	background: rgb(39,42,63);
+}
+.preload-marker
+{
+	width: 0%;
+	height: 4px;
+	background: rgb(255,255,255);
+}
+
+.game
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.onyx
+{
+	position: absolute;
+	top: 7%;
+	left: 2%;
+	width: 96%;
+	height: 86%;
+  	display: block;
+  	z-index: 0;
+	background: rgba(0,0,0,0);
+}
+.onyx.active
+{
+	background: rgba(0,0,0,1);
+}
+
+.hud
+{
+	text-shadow: 1px 1px 1px #000;
+	position: relative;
+	visibility: hidden;
+}
+.hud-text
+{
+	position: absolute;
+	z-index: 100;
+	font-family: 'Press Start 2P', Arial;
+	font-size: 1.4em;
+	font-weight: 500;
+	color: white;
+	letter-spacing: -1px;
+}
+.hud-score
+{
+	top: 30px;
+	left: 30px;
+}
+.hud-rank
+{
+	top: 30px;
+	left: 290px;
+}
+.hud-instructions
+{
+	top: 30px;
+	right: 30px;
+}
+
+.game-score
+{
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	z-index: 100;
+	font-family: 'Press Start 2P', Arial;
+	font-size: 4em;
+	font-weight: 500;
+	opacity: 0;	
+	color: rgb(244,60,125);
+	text-shadow: 1px 1px 1px #000;
+}
+.game-score-positive
+{
+	color: rgb(60,244,125);
+}
+
+.glcanvas
+{
+	opacity: 0;
+	transition: opacity 0.5s ease-out;
+}
+.glcanvas.active
+{
+	opacity: 1;
+}
+
+.game-over-screen
+{
+	position: absolute;
+	visibility: hidden;
+	margin-top: 250px;
+	width: 700px;
+	left: 250px;
+}
+.game-over-screen .scoring
+{
+	display: inline-block;
+	font-family: 'Museo Sans W01_700';
+	text-align: left;
+	font-size: 4em;
+	line-height: 0.9em;
+	padding-left: 30px;
+	margin-left: 30px;
+	border-left: 2px solid white;
+}
+.game-over-screen h3
+{
+	position: relative;
+	top: -25px;
+	text-align: left;
+	margin: 0;
+	display: inline-block;
+}
+.game-over-screen  .rank-title
+{
+	display: inline-block;
+}
+.game-over-screen  .rank
+{
+	
+}
+.game-over-screen  .rank-val
+{
+	display: inline-block;
+	color: white;
+	margin-left: 30px;
+}
+.game-over-screen  .score-title
+{
+	display: inline-block;
+}
+.game-over-screen .score
+{
+	
+}
+.game-over-screen .score-val
+{
+	display: inline-block;
+	color: white;
+	margin-left: 70px;
+}
+.score-table
+{
+	margin-top: 50px;
+}
+.play-again-button
+{
+	background: rgb(39,42,63);
+	color:white;
+	display: block;
+	cursor: pointer;
+	padding: 10px;
+	max-width: 386px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	border-radius: 5px;
+	font-family: 'Museo Sans W01_700';
+	font-size: 2.5em;
+	letter-spacing: 1.1px;
+	box-shadow: 10px 10px rgba(0,0,0,0.1);
+	transition: all 0.2s ease-out;
+}
+.play-again-button:hover
+{
+	background: rgb(215,146,31);
+}
+.driving-tips
+{
+	margin-top: 50px;
+}
+.driving-tips p
+{
+	font-size: 1.0em;
+	margin-bottom: 0;
+	text-align: left;
+	border-left: 2px solid white;
+	padding-left: 15px;
+}
+
+.visible
+{
+	visibility: visible;
+}
+.inactive
+{
+	display: none;
+}
