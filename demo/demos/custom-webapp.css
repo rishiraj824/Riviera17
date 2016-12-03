@@ -1,0 +1,116 @@
+/* -----------------------------------------------------------------------------------
+	
+	COLORS	
+
+----------------------------------------------------------------------------------- */	
+.sr-button.button-5:hover,
+.text-light .sr-button.button-5:hover,
+.sr-button.button-6:hover,
+.text-light .sr-button.button-6:hover { 
+	border-color: #e31a36; 
+	}
+	
+input[type=submit]:hover, input[type=button]:hover, button:hover,
+.sr-button:hover,
+.text-light .sr-button:hover,
+.sr-button.button-1:hover,
+.text-light .sr-button.button-1:hover,
+.sr-button.button-2,
+.sr-button.button-5:hover,
+.text-light .sr-button.button-5:hover { 
+	background-color: #e31a36; 
+	}
+	
+nav#main-nav > ul > li > a.button-style:hover:before { background: #e31a36 !important; }
+
+
+
+/* -----------------------------------------------------------------------------------
+	
+	FONTS	
+
+----------------------------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6,
+.tp-caption.sudo-caption,
+label,
+select,
+table thead th,
+blockquote cite,
+small,
+#menu .open-nav,
+nav#main-nav > ul > li > a,
+nav#main-nav .mega-menu-content ul li.mega-menu-title > a,
+#header-search .header-search-content input[type=text],
+#header-language a#show-language,
+#header-language .header-language-content ul.lang-select li a,
+footer #backtotop,
+.filter li a,
+.blog-item .blog-content .post-meta li,
+.comments .comment-reply-link,
+.widget ul:not(.socialmedia-widget) li a,
+#single-pagination ul li a,
+#share ul li a,
+.product-media .onsale,
+.product-price,
+.pricing-table .pricing-price .price-unit,
+.sr-counter .counter-value,
+.widget ul:not(.socialmedia-widget):not(.product-list) li a {
+	font-family: 'Lato'; 
+	}
+
+/* MAIN TEXT FONT */
+body {
+	font-weight: 300;
+	letter-spacing: 0.02em;
+	font-size: 16px; 
+	line-height: 26px;
+	font-family: "Lato";
+	color: #87959a;
+	}
+	
+
+/* HEADING TITLE */
+h1, h2, h3, h4, h5, h6,
+.tp-caption.sudo-caption {
+	font-weight: 300;
+	letter-spacing: -0.02em;
+	}
+	h1 b, h2 b, h3 b, h4 b, h5 b, h6 b, h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong, .tp-caption.sudo-caption strong { font-weight: 600; }	
+	
+
+/* MAIN NAV */
+nav#main-nav > ul > li > a {
+	font-weight: 600;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	}
+	
+	
+/* -----------------------------------------------------------------------------------
+	
+	CUSTOM STYLING	
+
+----------------------------------------------------------------------------------- */
+.list-webapp li {
+	font-size: 15px;
+	line-height: 22px;
+	}
+	
+.list-webapp li i {
+	font-size: 17px;
+	line-height: 22px;
+	margin-right: 3px;
+	}
+	
+
+/* App Section handle background sizes */ 
+.app-section {
+	background-size: 50% auto !important;
+	}
+	
+@media only screen and (max-width: 768px) { 
+		.app-section {
+			background-image: none !important;
+		}
+	}

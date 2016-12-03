@@ -3,6 +3,8 @@ html, body
 	margin: 0;
 	padding: 0;
 	min-width: 1200px;
+	background: url('../svg/pattern.png') repeat;
+	background-color: #3F4482;
 }
 
 .full-width
@@ -20,14 +22,26 @@ html, body
 }
 .header
 {
-	background: rgb(28,31,46);
-	height: 986px;
+	position: relative;
+	text-align: center;
+	height: 100vh;
+}
+.vit_logo{
+	position: absolute;
+	top: 10vh;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	max-width: 200px;
 }
 .logo
 {
-	top: 240px;
-	position: absolute;
-	left: -340px;
+	top: 20vh;
+	position: relative;
+	max-width: 400px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
 }
 
 .sharing
@@ -239,15 +253,16 @@ html, body
 {
 	position: absolute;
 	display: block;
-	top: 860px;
-	left: 580px;
+	top: 80vh;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
 }
 
 .infographic
 {
 	padding-top: 150px;
 	position: relative;
-	background: rgb(39,42,63);
 }
 .infographic .fixed-width
 {
@@ -296,7 +311,7 @@ html, body
     transform-origin: 50% 50%;
 }
 
-.stripes
+/*.stripes
 {
 	position: absolute;
 	top: 220px;
@@ -309,7 +324,7 @@ html, body
 	background: rgb(36,39,59);
 	margin-top: 275px;
 }
-
+*/
 .info-rows
 {
 	margin-top: 150px;
@@ -342,7 +357,7 @@ html, body
 {
 	width: 300px;
 	position: relative;
-	top: -40px;
+	top: -33px;
 }
 .info-row.left .info-text
 {
@@ -354,10 +369,10 @@ html, body
 	display: block;
 	position: relative;
 }
-.safety-first
+/*.safety-first
 {
 	top:28px;
-}
+}*/
 .speeding-ticket
 {
 	
@@ -393,7 +408,7 @@ html, body
 {
 	font-family: 'Museo Sans W01_700';
 	color: white;
-	font-size: 2.5em;
+	font-size: 2em;
 	/*letter-spacing: 1.1px;*/
 	letter-spacing: -2px;
 	line-height: 0;

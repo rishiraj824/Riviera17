@@ -167,7 +167,7 @@ function load_complete()
 
 function on_game_shortcut()
 {
-	window.scrollTo(0, 5000);
+	window.location = 'welcome.html';
 }
 
 function on_replay()
@@ -232,7 +232,7 @@ function info_update()
 
 		var start = 30;
 		var end = 950;
-		for(var i = 0; i < 8; ++i)
+		for(var i = 0; i < 5; ++i)
 		{
 			var t = clamp((scroll - start)/(end-start),0,1);
 			start += 450;

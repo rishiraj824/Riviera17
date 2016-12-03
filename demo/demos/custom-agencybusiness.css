@@ -1,0 +1,78 @@
+/* -----------------------------------------------------------------------------------
+	
+	COLORS
+	___________
+	
+	Replace your color as needed
+
+----------------------------------------------------------------------------------- */
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover,
+label abbr,
+a,
+#menu .responsive-nav-toggle:hover,
+.sub-dark #header-cart .cart-item-list li .product-name a:hover,
+#header-cart .cart-total .cart-total-amount,
+.portfolio-item .portfolio-desc a:hover .portfolio-name,
+.blog-item .blog-desc .post-category:not(.subtitle-1):not(.subtitle-2),
+.product-price ins,
+.product-rating .star-rating,
+.cart-total table.table-cart tr.total .product-price,
+#single-pagination ul li a:hover,
+.toggle-title:hover .toggle-name,
+.pricing-table.accent-table .pricing-price .price-unit,
+.widget ul:not(.socialmedia-widget):not(.product-list) li a:hover { 
+	color: #ae9a93; 
+	}
+	
+#page-loader .loader-figure,
+#smart-nav ul li.current-menu-item a, #smart-nav ul li.current-menu-item a span,
+.sr-button.button-5:hover,
+.text-light .sr-button.button-5:hover,
+hr.colored,
+.inline-video:hover::before,
+.inline-video .inline-iframe-container .close-inline-video:hover,
+.accent-pricing .pricing-table.accent-table, .text-light .accent-pricing .pricing-table.accent-table,
+.tagcloud > a:hover { 
+	border-color: #ae9a93; 
+	}
+	
+input[type=submit]:hover, input[type=button]:hover, button:hover,
+#menu .responsive-nav-toggle:hover .hamburger,
+#menu .responsive-nav-toggle:hover .hamburger:before, 
+#menu .responsive-nav-toggle:hover .hamburger:after,
+#smart-nav ul li.current-menu-item a, #smart-nav ul li.current-menu-item a span,
+#header-search a#close-search:hover:before, #header-search a#close-search:hover:after,
+#header-cart a#show-cart span,
+.product-media .onsale,
+.shop-container .shop-item .product-media .add-to-cart-overlay a:hover,
+.sr-button:hover,
+.text-light .sr-button:hover,
+.sr-button.button-1:hover,
+.text-light .sr-button.button-1:hover,
+.sr-button.button-2,
+.sr-button.button-5:hover,
+.text-light .sr-button.button-5:hover,
+hr.colored,
+.tabs-button ul.tab-nav li.active a, .vertical-tabs ul.tab-nav li.active a { 
+	background-color: #ae9a93; 
+	}
+
+.colored,
+nav#main-nav ul li ul > li a:hover, nav#main-nav ul li ul > li.current-menu-item > a,
+#menu.menu-is-open nav#main-nav ul li a:hover,
+#header-search a#show-search:hover,
+#header-language .header-language-content ul.lang-select li a:hover,
+header.small-header #header-search a#show-search:hover,
+header.small-header.header-dark:not(.mega-hover) #header-search a#show-search:hover { 
+	color: #ae9a93 !important; 
+	}
+	
+header #menu .responsive-nav-toggle:hover .hamburger, header #menu.menu-is-open .responsive-nav-toggle:hover .hamburger,
+header #menu .responsive-nav-toggle:hover .hamburger:before, header #menu.menu-is-open .responsive-nav-toggle:hover .hamburger:before, 
+header #menu .responsive-nav-toggle:hover .hamburger:after, header #menu.menu-is-open .responsive-nav-toggle:hover .hamburger:after { 
+	background-color: #ae9a93 !important; 
+	}
+	
+hr.zigzag.colored {
+  	background: repeat-x url('data:image/svg+xml;utf-8,<?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="6px" viewBox="0 0 12 6" enable-background="new 0 0 12 6" xml:space="preserve"><polygon points="6,3.5 0,0 0,1.208 6,4.708 12,1.208 12,0" fill="%23ae9a93"/></svg>');
+	}	
