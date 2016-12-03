@@ -73,7 +73,7 @@
 		<script type="text/javascript" src="https://fast.fonts.net/jsapi/1c33cdff-5f3c-4b54-96c5-10e1a15f35c2.js"></script>
 	</head>
 	<body>
-		
+		<div class="pattern-container">
 		<div class="header full-width">
 
 			<div class="button game-shortcut" style="display: none;" class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s">Skip the Timeline</div>
@@ -83,7 +83,7 @@
 				<img src="svg/Riviera2017-header.png" class="logo wow fadeIn" data-wow-duration="2s" >
 				<!-- 
 				<div class="scroll-cta">Scroll Down to Ride</div> -->
-				<img class="scroll-down-icon scroll-cta" src="svg/scroll-down.png"  height="150px">
+				<img class="scroll-down-icon scroll-cta" src="svg/scroll-down.png"  height="75px">
 
 			</div>
 
@@ -201,7 +201,6 @@
 
 			</div>
 
-			<div class="fixed-width">
 
 				<div class="game-preloader">
 					<div class="preload-bar">
@@ -210,7 +209,19 @@
 				</div>
 
 				<div class="game-form visible">
-					
+			
+				<div class="grid">
+				  <div class="grid-sizer"></div>
+				  <div class="grid-item grid-item--width2"> <h2>About Riviera</h2></div>
+				  <div class="grid-item grid-item--height2"><h2>Sponsors</h2></div>
+				  
+				  <div class="grid-item grid-item--width2"><h2>Events</h2></div>
+				  <div class="grid-item grid-item--width2 grid-item--height2"><h2>Pro Shows</h2></div>
+				  <div class="grid-item grid-item--height2"><h2>Registerations</h2></div>
+				  <div class="grid-item grid-item--width2"><h2>Organizers</h2></div>
+				  <div class="grid-item grid-item--width2"><h2>Watch the Previous After Movie</h2></div>
+				</div>
+
 
 										
 				</div>
@@ -231,8 +242,8 @@
 					<div class="driving-tips"></div>
 
 				</div>
-			</div>
 
+		</div>
 		</div>
 		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 		<script src="js/onyx.js"></script>
@@ -278,6 +289,20 @@
 			  }
 			);
 			wow.init();
+		</script>
+		<script type="text/javascript" src="js/isotope.min.js"></script>
+		<script type="text/javascript" src="js/packery.min.js"></script>
+		<script type="text/javascript">
+	$('.grid').isotope({
+	  layoutMode: 'packery',
+	  itemSelector: '.grid-item',
+	  percentPosition: true,
+	  packery: {
+	    columnWidth: '.grid-sizer',
+	    gutter: 10
+	  }
+	});
+
 		</script>
 	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"a2d6172b61","applicationID":"4138587","transactionName":"MVYGYRFRChBZVkxfDAgcJVYXWQsNF0VZUQYVHABcEEAIAkE=","queueTime":0,"applicationTime":101,"atts":"HREFF1lLGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>
