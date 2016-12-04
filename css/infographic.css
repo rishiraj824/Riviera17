@@ -1,10 +1,25 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v7/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v7/IQHow_FEYlDC4Gzy_m8fcoWiMMZ7xLd792ULpGE4W_Y.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
 html, body
 {
 	margin: 0;
 	padding: 0;
 	min-width: 1200px;
 	position: relative;
-	font-family: 'Museo Sans W01_300';
+	font-family: 'Montserrat', sans-serif !important;
 	background-color: #3F4482;
 }
 .pattern-container{ position: relative;z-index: 2; }
@@ -179,7 +194,7 @@ body:before {
 .subtitle
 {
 	position: absolute;
-	font-family: 'Museo Sans W01_300';
+	font-family: 'Montserrat', sans-serif !important;
 	font-size: 1.2em;
 	color: rgb(163,168,194);
 	text-align: right;
@@ -194,7 +209,7 @@ body:before {
 }
 .into-cta
 {
-	font-family: 'Museo Sans W01_300';
+	font-family: 'Montserrat', sans-serif !important;
 	font-size: 1.0em;
 	color: rgb(163,168,194);
 	text-align: center;
@@ -430,7 +445,7 @@ body:before {
 }
 .info-point p
 {
-	font-family: 'Museo Sans W01_300';
+	font-family: 'Montserrat', sans-serif !important;
 	color: white;
 	font-size: 1.2em;
 }
@@ -465,7 +480,7 @@ body:before {
 }
 .game-entry p
 {
-	font-family: 'Museo Sans W01_300';
+	font-family: 'Montserrat', sans-serif !important;
 	font-size: 1.2em;
 	color: white;
 	margin-bottom: 50px;
@@ -495,7 +510,7 @@ body:before {
 	border-radius: 6px;
 	width: 30%;
 	width: 400px;
-	font-family: 'Museo Sans W01_300';
+	font-family: 'Montserrat', sans-serif !important;
 	height: 60px;
 	font-size: 1.2em;
 	text-align: center;
@@ -770,7 +785,7 @@ textarea:focus, input:focus {
 	text-decoration: none !important;
 	font-weight: 700;
 	margin-left: 30px;
-	font-family: 'Museo Sans W01_300';
+	font-family: 'Montserrat', sans-serif !important;
 }	
 /* ---- .element-item ---- */
 @media screen (max-width: 990px){
