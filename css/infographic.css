@@ -444,7 +444,8 @@ body:before {
 .game-entry
 {
 	height: 986px;
-	background: #000;
+	text-align: center;
+	background: #fff;
 	transition: all 0.5s ease-out;
 }
 .game-entry.playing
@@ -482,7 +483,7 @@ body:before {
 {
     margin: 0 auto;
     position: absolute;
-    margin-top: 250px;
+    margin-top: 100px;
     visibility: hidden;
     left: 12%;
     right: 0;
@@ -756,9 +757,7 @@ textarea:focus, input:focus {
 /*Custom*/
 
 /* ---- grid ---- */
-.grid{
-	width: 100%;
-}
+
 /* clear fix */
 .grid:after {
   content: '';
@@ -767,12 +766,18 @@ textarea:focus, input:focus {
 }
 .grid-item h2{
 	color: #fff;
+	text-align: left;
+	text-decoration: none !important;
 	font-weight: 700;
 	margin-left: 30px;
 	font-family: 'Museo Sans W01_300';
 }	
 /* ---- .element-item ---- */
-
+@media screen (max-width: 990px){
+	.game-entry{
+		display: none;
+	}
+}
 /* 5 columns, percentage width */
 .grid-item,
 .grid-sizer {
@@ -783,9 +788,15 @@ textarea:focus, input:focus {
   float: left;
   height: 142px;
   background-position: center;
-  
+  cursor: pointer;
+  transition: all ease-out 0.5s;
 }
+.grid-item  a h2{
+	text-decoration: none;
+	}
 
+.grid-item--width2 { width: 40%; background: url('../svg/aboutriviera.jpg') no-repeat; background-size: cover;background-position: center;}
+.grid-item--height2 { height: 300px; background: url('../svg/arts.png') no-repeat; background-size: cover;}
 
 .grid-item--width2-about{
 	width: 40%; background: url('../svg/aboutriviera.jpg') no-repeat; background-size: cover;background-position: center;
@@ -808,3 +819,13 @@ width: 40%; background: url('../svg/aboutriviera.jpg') no-repeat; background-siz
 .grid-item--width2-aftermovie{
 width: 40%; background: url('../svg/aboutriviera.jpg') no-repeat; background-size: cover;background-position: center;
 }
+.logo-bottom{
+	width: auto;
+	height: 100px;
+	position: relative;
+	left: -84px;
+	top: -20px;
+	/* margin: 0 auto; */
+	z-index: 11;
+}
+.js div#preloader { position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; overflow: visible; background: #fff url('../svg/Riviera2017-header.png') no-repeat center center;background-size: 200px; }
