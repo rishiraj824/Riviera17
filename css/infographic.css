@@ -210,7 +210,8 @@ body:before {
 }
 .subtitle b
 {
-	font-family: 'Museo Sans W01_700';
+	font-family: 'Montserrat';
+	font-weight: 700;
 	color: white;
 }
 .into-cta
@@ -235,7 +236,8 @@ body:before {
 	display: block;
 	padding: 20px;
 	border-radius: 5px;
-	font-family: 'Museo Sans W01_700';
+	font-family: 'Montserrat';
+	font-weight: 700;
 	font-size: 1.6em;
 	letter-spacing: 1.1px;
 	cursor: pointer;
@@ -272,7 +274,8 @@ body:before {
 {
 	position: absolute;
 	text-align: center;
-	font-family: 'Museo Sans W01_700';
+	font-family: 'Montserrat';
+	font-weight: 700;
 	font-size: 1.2em;
 	color: rgb(50,171,223);
 	top: 830px;
@@ -455,7 +458,8 @@ body:before {
 
 .info-point h3
 {
-	font-family: 'Museo Sans W01_700';
+	font-family: 'Montserrat';
+	font-weight: 700;
 	color: white;
 	font-size: 2em;
 	/*letter-spacing: 1.1px;*/
@@ -474,7 +478,8 @@ body:before {
 
 .info-point b
 {
-	font-family: 'Museo Sans W01_700';
+	font-family: 'Montserrat';
+	font-weight: 700;
 	color:rgb(96,184,229);
 }
 
@@ -491,7 +496,8 @@ body:before {
 }
 .game-entry h3
 {
-	font-family: 'Museo Sans W01_700';
+	font-family: 'Montserrat';
+	font-weight: 700;
 	color: white;
 	font-size: 5.0em;
 	/*letter-spacing: 1.1px;*/
@@ -574,7 +580,8 @@ textarea:focus, input:focus {
 	margin-right: auto;
 	margin-top: 10px;
 	border-radius: 5px;
-	font-family: 'Museo Sans W01_700';
+	font-family: 'Montserrat';
+	font-weight: 700;
 	font-size: 2.5em;
 	letter-spacing: 1.1px;
 	box-shadow: 10px 10px rgba(0,0,0,0.1);
@@ -700,7 +707,8 @@ textarea:focus, input:focus {
 .game-over-screen .scoring
 {
 	display: inline-block;
-	font-family: 'Museo Sans W01_700';
+	font-family: 'Montserrat';
+	font-weight: 700;
 	text-align: left;
 	font-size: 4em;
 	line-height: 0.9em;
@@ -760,7 +768,8 @@ textarea:focus, input:focus {
 	margin-right: auto;
 	margin-top: 10px;
 	border-radius: 5px;
-	font-family: 'Museo Sans W01_700';
+	font-family: 'Montserrat';
+	font-weight: 700;
 	font-size: 2.5em;
 	letter-spacing: 1.1px;
 	box-shadow: 10px 10px rgba(0,0,0,0.1);
