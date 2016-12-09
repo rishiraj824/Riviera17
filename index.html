@@ -75,7 +75,7 @@
 	<body>
 		<div id="preloader"></div>
 		<div class="pattern-container">
-		<div class="header full-width">
+		<div class="header full-width scrollTo">
 
 			<div class="button game-shortcut" style="display: none;" class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s">Skip the Timeline</div>
 
@@ -91,7 +91,7 @@
 
 		</div>
 
-		<div class="infographic full-width">
+		<div class="infographic full-width scrollTo">
 
 			
 
@@ -194,7 +194,7 @@
 		<div id="aftermovie" class="modal" style="display: none;" >
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/e2mC1qsG0tY" frameborder="0" allowfullscreen></iframe>
 		</div>
-		<div class="game-entry full-width">
+		<div class="game-entry full-width 	">
 
 		
 
@@ -214,7 +214,7 @@
 			
 			
 
-				<div class="game-form visible wow fadeIn" data-wow-duration="1s"><!-- 
+				<div class="game-form visible wow fadeIn" ><!-- 
 					<img src="svg/Riviera2017-header.png" class="logo-bottom"> -->
 				<div class="grid">
 				  <div class="grid-sizer"></div>
@@ -359,6 +359,67 @@
 		});
 
 		});
+		/*var scrolling = false;
+		var currentPos = 0;
+
+		    function scrollUp(){
+		        if(!scrolling && currentPos > 0 ){
+		            scrolling=true;
+		            currentPos --;
+		            var scrollToElement = $('.scrollTo')[currentPos];
+
+		            $('html, body').animate({
+		                scrollTop: $(scrollToElement).offset().top
+		            }, 500, function(){
+		                scrolling = false;
+		            });      
+		        }
+		    }   
+
+		    function scrollDown(){   
+		        if(!scrolling && currentPos < $('.scrollTo').length-1  ){
+		            scrolling=true;
+		            currentPos ++;
+		            var scrollToElement = $('.scrollTo')[currentPos];
+
+		            $('html, body').animate({
+		                scrollTop: $(scrollToElement).offset().top
+		            }, 500,function(){
+		                scrolling = false;
+		            }); 
+		        }
+		    }    
+
+		    $(document).ready(function() {
+
+		        // Get the current position on load
+
+		        for( var i = 0; i < $('.scrollTo').length; i++){
+		            var elm = $('.scrollTo')[i];
+
+		            if( $(document).scrollTop() >= $(elm).offset().top ){
+		                currentPos = i;
+		            }
+		        }
+
+		        $(document).bind('DOMMouseScroll', function(e){
+		            if(e.originalEvent.detail > 0) {
+		                scrollDown();
+		            }else {
+		                scrollUp();   
+		            }
+		            return false;
+		        });
+
+		        $(document).bind('mousewheel', function(e){
+		            if(e.originalEvent.wheelDelta < 0) {
+		                scrollDown();
+		            }else {
+		                scrollUp();     
+		            }
+		            return false;
+		        });
+		    });*/
 
 		</script>
 		<script type="text/javascript" src="js/jquery-modal.min.js"></script>

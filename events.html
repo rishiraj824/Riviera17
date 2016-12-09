@@ -147,6 +147,7 @@
         <div class="tabs vertical-tabs">
             <ul class="filter tab-nav clearfix" data-related-grid="portfolio-grid">
                 <li class="active"><a class="tab-name uppercase" data-filter="*"  href="#">All Events</a></li>
+                <li ><a data-filter=".INFORMALS"  class="tab-name uppercase"  href="#">Informals</a></li>
                 <li><a class="tab-name uppercase" data-filter=".wordwithhindi"  href="#">Words With Hindi</a></li>
                 <li><a data-filter=".MUSIC"  class="tab-name uppercase"  href="#">Music</a></li>
                 <li><a data-filter=".wordswithtamil" class="tab-name uppercase"  href="#">Words With Tamil</a></li>  
@@ -157,7 +158,7 @@
                 <li><a data-filter=".DRAMA"  class="tab-name uppercase"  href="#">Drama</a></li>
                 <li><a data-filter=".WORKSHOP"  class="tab-name uppercase"  href="#">Workshop</a></li>
                 <li><a  data-filter=".CYBERENGAGE" class="tab-name uppercase"  href="#">Cyber Engage</a></li>
-                <li><a data-filter=".INFORMALS"  class="tab-name uppercase"  href="#">Informals</a></li>
+                
             </ul>
 
             <div id="portfolio-grid" class="isotope-grid portfolio-container tab-container style-modern clearfix" data-heightratio="1">    
@@ -213,7 +214,10 @@
     margin-top: 9px;
     line-height: 18px;
 }
-
+.tabs-button ul.tab-nav li.active a, .vertical-tabs ul.tab-nav li.active a {
+    color: #ffffff;
+    background: #3F4482;
+}
 </style>
 <!-- SCRIPTS -->
 <script src="files/js/jquery-2.1.4.min.js"></script>
