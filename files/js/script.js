@@ -3,14 +3,16 @@
  	Script - All Custom frontend jQuery scripts & functions
  
 -----------------------------------------------------------------------------------*/
+
+// site preloader -- also uncomment the div in the header and the css style for #preloader
+		$(window).load(function(){
+			$('#preloader').fadeOut('slow',function(){$(this).remove();});
+		});
 (function(){
 'use strict';
 
 
-		// site preloader -- also uncomment the div in the header and the css style for #preloader
-		$(window).load(function(){
-			$('#preloader').fadeOut('slow',function(){$(this).remove();});
-		});
+		
 
 		
 
@@ -32,11 +34,23 @@ function smallHeader(){if(jQuery(window).scrollTop()>40){var e=!1,a=!1;jQuery("n
         	.done(function(data2) {
 
         	for (var i = 0; i < data.length; i++) {
-                $("#portfolio-grid").append('<div class="isotope-item portfolio-item portfolio-new wide '+ data[i]["MAIN CATEGORY"]+'"><div class="portfolio-media"><a href="#" class="thumb-overlay overlay-effect-1 text-light"><img src="svg/pattern.png" style="background-size:conatain" alt="SEO IMG NAME"><div class="overlay-caption"><h6 class="caption-sub portfolio-category subtitle-2">'+data[i]["CATEGORY NAME"]+'</h6><hr class="zigzag"><h4 class="caption-name portfolio-name">'+data[i]["EVENT NAME"]+'</h4><h6 class="caption-sub subtitle-3">Max Participant :'+ data[i]["MAXIMUM PARTICIPANTS"]+', Total Team (External): '+ data[i]["TOTAL TEAMS(External)"]+', Total Teams(Internal): '+ data[i]["TOTAL TEAMS(Internal)"]+', Event Amount: Rs.'+ data[i]["EVENT AMOUNT"]+', Type : '+ data[i]["TYPE"]+', Min Participants: '+ data[i]["MINIMUM PARTICIPANTS"]+'</h6><h6 class="caption-name portfolio-name ">Contact - '+ data2[i]["COORDINATOR 1"]+' +91-9835698984, '+ data2[i]["COORDINATOR 2"]+' +91-9835698984</h6></div></a></div></div>');
+                $("#portfolio-grid").append('<div class="isotope-item portfolio-item portfolio-new wide '+ data[i]["MAIN CATEGORY"]+'"><div class="portfolio-media"><a href="#" class="thumb-overlay overlay-effect-1 text-light"><img src="svg/pattern.png" style="background-size:cover" alt="pattern"><div class="overlay-caption"><h6 class="caption-sub portfolio-category subtitle-2">'+data[i]["CATEGORY NAME"]+'</h6><hr class="zigzag"><h4 class="caption-name portfolio-name">'+data[i]["EVENT NAME"]+'</h4><h6 class="caption-sub subtitle-3">Max Participant :'+ data[i]["MAXIMUM PARTICIPANTS"]+', Total Team (External): '+ data[i]["TOTAL TEAMS(External)"]+', Total Teams(Internal): '+ data[i]["TOTAL TEAMS(Internal)"]+', Event Amount: Rs.'+ data[i]["EVENT AMOUNT"]+', Type : '+ data[i]["TYPE"]+', Min Participants: '+ data[i]["MINIMUM PARTICIPANTS"]+'</h6><h6 class="caption-name portfolio-name ">Contact - '+ data2[i]["COORDINATOR 1"]+' +91-9835698984, '+ data2[i]["COORDINATOR 2"]+' +91-9835698984</h6></div></a></div></div>');
             }
             
             console.log("success");
         	})
+        	$.ajax({
+        		url: 'sportsdetails.json',
+        		type: 'GET',
+        		dataType: 'json'
+        	})
+        	.done(function(data) {
+        		for (var i = 0; i < data.length; i++) {
+                $("#portfolio-grid").append('<div class="isotope-item portfolio-item portfolio-new wide '+ data[i]["MAIN CATEGORY"]+'"><div class="portfolio-media"><a href="#" class="thumb-overlay overlay-effect-1 text-light"><img src="svg/pattern.png" style="background-size:cover" alt="pattern"><div class="overlay-caption"><h6 class="caption-sub portfolio-category subtitle-2">'+data[i]["CATEGORY NAME"]+'</h6><hr class="zigzag"><h4 class="caption-name portfolio-name">'+data[i]["CATEGORY NAME"]+'</h4><h6 class="caption-sub subtitle-3">Date : '+ data[i]["DATE"]+'</h6></div></a></div></div>');
+            }
+        	})
+
+        	
             setTimeout(function() {
 			if( jQuery().isotope ) { 
 				jQuery('.isotope-grid').each(function(){

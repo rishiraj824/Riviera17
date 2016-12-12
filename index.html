@@ -73,7 +73,16 @@
 		<link rel="stylesheet" type="text/css" href="css/jquery-modal.min.css">
 	</head>
 	<body>
+
 		<div id="preloader"></div>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1668653593388184";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
 		<div class="pattern-container">
 		<div class="header full-width scrollTo">
 
@@ -186,9 +195,10 @@
 		</div>
 
 		<div id="currentmovie" class="modal wow fadeInBottom" data-wow-duration="1s" style="display: none;" >
-			<iframe width="420" height="315"
-			src="https://www.facebook.com/rivieraVITUniversity/videos/547904728667511/">
-			</iframe>
+			<div class="fb-video" data-href="https://www.facebook.com/rivieraVITUniversity/videos/512505358874115/" data-width="500" data-allowfullscreen="true" data-show-text="false"><blockquote cite="https://www.facebook.com/rivieraVITUniversity/videos/512505358874115/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/rivieraVITUniversity/videos/512505358874115/">Riviera&#039;17 Trailer</a><p>For the ones who couldn&#039;t be there for the Freshmen Orientation yesterday, here&#039;s the biggest sneak peek!
+			Presenting to you, the much awaited official trailer of Riviera&#039;17!
+			#EntertainmentUnlimited
+			#TheRivieraPhenomenon</p>Posted by <a href="https://www.facebook.com/rivieraVITUniversity/">Riviera, VIT University</a></blockquote></div>
 			
 		</div>
 		<div id="aftermovie" class="modal" style="display: none;" >
@@ -220,7 +230,7 @@
 				  <div class="grid-sizer"></div>
 				  <div class="grid-item hvr-glow grid-item--width2-about">
 				  <a  class="hvr-blob" href="#currentmovie" rel="modal:open">
-				   <h2>About Riviera'17</h2>
+				   <h2>Riviera'17 Sneak Peek</h2>
 				   <hr class="mini">
 				   </a>
 				   </div>
@@ -250,13 +260,13 @@
 				  </div>
 				  <div class="grid-item hvr-glow grid-item--width2-organizer">
 				  <a class="hvr-blob" href="team.html">
-				  <h2>Organizers</h2>
+				  <h2>Team Riviera</h2>
 				  <hr class="mini">
 				  </a>
 				  </div>
 				  <div class="grid-item hvr-glow grid-item--width2-aftermovie">
 				  <a class="hvr-blob" href="#aftermovie" rel="modal:open">
-				  <h2>After Movie Riviera'16</h2>
+				  <h2>Riviera'16 After Movie</h2>
 				  <hr class="mini">
 				  </a>
 				  </div>
@@ -270,7 +280,7 @@
 					    <li class="instagram"><a target="_blank" href="https://www.instagram.com/rivieravituniversity/"></a></li>
 					</ul>
 
-					<h4 style="text-align: right;margin: 0 20px 20px 0;">Copyright&nbsp;&copy;&nbsp;2016 VIT University</h4>
+					<h4 style="text-align: right;margin: 0 20px 20px 0;">Copyright&nbsp;&copy;&nbsp;2017 VIT University</h4>
 				</div>
 										
 				</div>

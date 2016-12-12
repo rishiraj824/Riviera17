@@ -734,9 +734,9 @@ header .header-inner {
 header #logo {
 	max-width: 100%;
 	z-index: 10;
-	padding-top: 30px; 
-	padding-bottom: 30px; 
-	height: 30px;
+	padding-top: 25px; 
+	padding-bottom: 20px; 
+	height: 45px;
 	transition: all 0.4s ease;
 	}
 	
@@ -5370,7 +5370,7 @@ div[class*='alert-']:before {
    	!!!!!!!!!!!!!!!!!! */
 
 /* your logo height */
-header #logo { height: 30px; }
+header #logo { height: 45px; }
 nav#main-nav > ul > li > a { height: 30px; line-height: 30px; }
 #header-search a#show-search, #header-cart a#show-cart, #header-language a#show-language, #header-social .socialmedia-widget li a { height: 30px; line-height: 30px; }
 
