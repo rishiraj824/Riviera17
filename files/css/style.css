@@ -5389,8 +5389,8 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 
 
 /* YOUR CUSTOM CSS */
-.js div#preloader { position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; overflow: visible; background: #3F4482 url('../../svg/preloader.gif') no-repeat center center;background-size: 300px; }
-
+/*.js div#preloader { position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; overflow: visible; background: #fff url('../../svg/preloader.gif') no-repeat center center; }
+*/
 .thumb-overlay{
 	background: #000;
 }

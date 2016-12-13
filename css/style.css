@@ -177,9 +177,9 @@ h5 + h5, h5 + h6, h6 + h5, h6 + h6 { margin-top: 6px; }
 .subtitle-1 b, .subtitle-1 strong { font-weight: 600; }
 
 .subtitle-2 { 
-	font-family: 'Lora'; 
-	font-weight: 400; 
-	font-style: italic;
+	font-family: 'Lato'; 
+	font-weight: 400; /*
+	font-style: italic;*/
 	text-transform: none;
 	letter-spacing: 0.03em; 
 	}
@@ -5394,3 +5394,4 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 	margin: 0 auto;
 	text-align: center;
 }
+
