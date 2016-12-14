@@ -480,9 +480,9 @@ body:before {
 
 .game-entry
 {
-	height: 986px;
+	height: 912px;
 	text-align: center;
-	background: #232323;
+	background: #383838;
 	transition: all 0.5s ease-out;
 }
 .game-entry.playing
@@ -521,7 +521,7 @@ body:before {
 {
     margin: 0 auto;
     position: absolute;
-    margin-top:250px;
+    margin-top:100px;
     visibility: hidden;
     left: 12%;
     right: 0;
@@ -888,7 +888,7 @@ width: 40%; background: url('../svg/after-movie.png') no-repeat; background-size
 	text-align: left;
 }
 .socialmedia-widget {
-	text-align: left;
+	text-align: center;
 	padding: 0;
 	list-style: none;
 	}
@@ -1031,3 +1031,24 @@ iframe{
 	border:0;
 	margin: 0;
 }
+footer .copyright {
+	border-top: 1px solid rgba(0, 0, 0, .10);
+	text-align: center;
+	padding: 30px 0;
+	line-height: 20px;
+	width: 1100px;
+	color: #fff;
+	}
+	.text-light .copyright { border-color: rgba(255, 255, 255, .15); }
+
+	#footer{
+		width: 1100px;
+	}
+	#footer h4{
+		color: #fff;
+
+	}
+	.copyright small a{
+		color: #b1b1ce;
+		text-decoration: none;
+	}
