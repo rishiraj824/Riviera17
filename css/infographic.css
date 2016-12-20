@@ -394,13 +394,13 @@ body:before {
 }
 .info-text.left
 {
-	top: -320px;
-	left: -600px;
+    top: -350px;
+    left: -625px;
 }
 .info-text.right
 {
-	top: -310px;
-	right: -640px;
+    top: -382px;
+    right: -666px;
 }
 .info-row.left .info-text
 {
@@ -468,7 +468,7 @@ body:before {
 {
 	font-family: 'Montserrat', sans-serif !important;
 	color: white;
-	font-size: 1.2em;
+	font-size: 1em;
 }
 
 .info-point b
