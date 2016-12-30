@@ -23,7 +23,7 @@ function smallHeader(){if(jQuery(window).scrollTop()>40){var e=!1,a=!1;jQuery("n
         })
         .done(function(data) {
         	$.ajax({
-        	    url: 'coordinatordetails.json',
+        	    url: 'contact.json',
         	    type: 'GET',
         	    dataType: 'json',
         	})
@@ -41,7 +41,9 @@ function smallHeader(){if(jQuery(window).scrollTop()>40){var e=!1,a=!1;jQuery("n
         			 var getIndexIfObjWithAttr = function(array, attr, value) {
         			 	
         			     for(var j = 0; j < array.length; j++) {
-        			         if(array[j][attr] === value) {
+        			     	var string1 = array[j][attr].toUpperCase();
+        			     	var string2 = value.toUpperCase();
+        			         if(string1 == string2) {
         			             return j;
         			         }
         			     }
@@ -51,7 +53,7 @@ function smallHeader(){if(jQuery(window).scrollTop()>40){var e=!1,a=!1;jQuery("n
         			
         			 var index = getIndexIfObjWithAttr(data3 , "EVENT NAME", data2[i]["EVENT NAME"]);
         			
-        	        $("#portfolio-grid").append('<div class="isotope-item portfolio-item portfolio-new wide '+ data[i]["MAIN CATEGORY"]+'"><div class="portfolio-media"><a href="#" class="thumb-overlay overlay-effect-1 text-light"><img src="svg/pattern.png" style="background-size:cover;width:435px;height:auto;filter:brightness(70%);" alt="pattern"><div class="overlay-caption"><h6 class="caption-sub portfolio-category subtitle-2">'+data[i]["CATEGORY NAME"]+'</h6><hr class="zigzag"><h4 class="caption-name portfolio-name">'+data[i]["EVENT NAME"]+'</h4><h6 class="caption-sub subtitle-3">'+ data3[index]["DESCRIPTION"]+'</h6><h6 class="caption-name portfolio-name ">Contact - '+ data2[i]["COORDINATOR 1"]+',' + data2[i]["COORDINATOR 2"]+'</h6></div></a></div></div>');
+        	        $("#portfolio-grid").append('<div class="isotope-item portfolio-item portfolio-new wide '+ data[i]["MAIN CATEGORY"]+'"><div class="portfolio-media"><a href="#" class="thumb-overlay overlay-effect-1 text-light"><img src="svg/pattern.png" style="background-size:cover;width:435px;height:auto;filter:brightness(70%);" alt="pattern"><div class="overlay-caption"><h6 class="caption-sub portfolio-category subtitle-2">'+data[i]["CATEGORY NAME"]+'</h6><hr class="zigzag"><h4 class="caption-name portfolio-name">'+data[i]["EVENT NAME"]+'</h4><h6 class="caption-sub subtitle-3">'+ data3[index]["DESCRIPTION"]+'</h6><h6 class="caption-name portfolio-name ">Contact - '+ data2[i]["COORDINATOR 1"]+'-'+data2[i]["PHONE"] +', '+ data2[i]["COORDINATOR 2"] + '-'+data2[i]["PHONE2"]+'</h6></div></a></div></div>');
         	        
         	    }
         	    	$.ajax({
@@ -111,9 +113,9 @@ function smallHeader(){if(jQuery(window).scrollTop()>40){var e=!1,a=!1;jQuery("n
 			
         });
             
-    });*/
+    });
 
-       
+       */
 	/*jQuery('#sr-demo-options').on("click", "a.demo-layout", function() {
 		jQuery(this).addClass("active"); 
 		jQuery(this).siblings("a.demo-layout").removeClass("active"); 
