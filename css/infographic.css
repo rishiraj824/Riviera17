@@ -56,17 +56,17 @@ body:before {
 }
 .vit_logo{
 	position: absolute;
-	top: 61.5vh;
+	top: 64vh;
 	left: 300px;
 	margin: 0 auto;
-	max-width: 200px;
+	max-width: 220px;
 }
 .isologo{
 	position: absolute;
 	top: 65vh;
 	right: 300px;
 	margin: 0 auto;
-	max-width: 200px;
+	max-width: 220px;
 }
 .logo
 {
