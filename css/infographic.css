@@ -845,7 +845,7 @@ textarea:focus, input:focus {
 	}
 
 .grid-item--width2 { width: 40%; background: url('../svg/aboutriviera.jpg') no-repeat; background-size: cover;background-position: center;}
-.grid-item--height2 { height: 300px; background: url('../svg/arts.png') no-repeat; background-size: cover;}
+.grid-item--height2 { height: 300px; background: url('../svg/artscurrent.png') no-repeat; background-size: cover;}
 
 .grid-item--width2-about{
 	width: 40%; background: url('../svg/aboutriviera.png') no-repeat; background-size: cover;background-position: center;
@@ -857,7 +857,7 @@ height: 300px; background: url('../svg/sponsors.jpg') no-repeat; background-size
 	width: 40%; background: url('../svg/events.jpg') no-repeat; background-size: cover;background-position: center;
 }
 .grid-item--height2-proshow{
-	height: 300px; background: url('../svg/arts.png') no-repeat; background-size: cover;
+	height: 300px; background: url('../svg/artscurrent.png') no-repeat; background-size: cover;
 }
 .grid-item--height2-registeration{
 height: 300px; background: url('../svg/registrations.jpg') no-repeat; background-size: cover;background-position: center;
