@@ -853,8 +853,8 @@ textarea:focus, input:focus {
 .grid-item--height2-sponsors{
 height: 300px; background: url('../svg/sponsors.jpg') no-repeat; background-size: cover;
 }
-.grid-item--width2-events{
-	width: 40%; background: url('../svg/events.jpg') no-repeat; background-size: cover;background-position: center;
+.grid-item--width3-events{
+	width: 18%; background: url('../svg/events.jpg') no-repeat; background-size: cover;background-position: center;
 }
 .grid-item--height2-proshow{
 	height: 300px; background: url('../svg/artscurrent.png') no-repeat; background-size: cover;
